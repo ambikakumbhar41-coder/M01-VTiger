@@ -21,10 +21,10 @@ public class TC_001  extends BaseClass{
 		hp.clickOnLeadsMenu();
 		LeadsPage lp=new LeadsPage(driver);
 		lp.clickOnAddLeads();
-		if(i<=3) {
-			i++;
-			Assert.fail();
-		}
+//		if(i<=3) {
+//			i++;
+//			Assert.fail();
+//		}
 		String fname=eutil.getDataFormatExcel("Leads", 1, 1);
 		String lname=eutil.getDataFormatExcel("Leads", 1, 2);
 		String company=eutil.getDataFormatExcel("Leads", 1, 3);
